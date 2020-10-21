@@ -4,6 +4,7 @@
     <title>User Stories</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="StyleSheet.css"/>
 	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -11,12 +12,13 @@
 <body>
     <div data-role="page">
 		<div data-role="panel" id="myPanel">
-			<ul>
+			<a href="Main.html" target="_self" data-role="button" data-icon="home" data-iconpos="notext"></a>
+			<ul data-role="listview" data-inset="true">
 				<li><a href="GoalOfTheApp.html" target="_self">Goal of the App</a></li>
 				<li><a href="UserStories.html" target="_self">User stories</a></li>
 				<li><a href="FinalAppSketches.html" target="_self">Final App Sketches</a></li>
 				<li><a href="SimilarApps.html" target="_self">Comparaison to similar apps</a></li>
-				<li><a href="Technologies&Frameworks.html" target="_self">Technologies & frameworks</a></li>
+				<li><a href="Technologies&Frameworks.html" target="_self" style="white-space: normal">Technologies & frameworks</a></li>
 			</ul>
 		</div>
 
@@ -26,11 +28,24 @@
         </div>
 
 		<div data-role="main" class="ui-content">
-			
+			<div data-role="collapsible">
+				<h3>Collapsible content header</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non dolor quis elit suscipit commodo a eu velit. Nulla sodales velit arcu, at accumsan nisi. Donec porta tempus lorem, eget luctus diam luctus ac. Nunc et aliquam massa. Duis enim felis, varius quis pharetra quis, iaculis ac nulla. Morbi congue suscipit elit vel porta. Proin lacinia scelerisque risus, at elementum diam elementum et.</p>
+			</div>
+			<div data-role="collapsible">
+				<h3>Collapsible content header</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non dolor quis elit suscipit commodo a eu velit. Nulla sodales velit arcu, at accumsan nisi. Donec porta tempus lorem, eget luctus diam luctus ac. Nunc et aliquam massa. Duis enim felis, varius quis pharetra quis, iaculis ac nulla. Morbi congue suscipit elit vel porta. Proin lacinia scelerisque risus, at elementum diam elementum et.</p>
+			</div>
 		</div>
 
-		<div data-role="footer">
-			<h1>Footer Text</h1>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" align="center">
+				<h1>3/6</h1>
+				<div data-role="controlgroup" data-type="horizontal">
+					<a href="GoalOfTheApp.html" class="ui-btn ui-icon-arrow-l ui-btn-icon-left fixed-width" target="_self" width="5px">Previous page</a>
+					<a href="FinalAppSketches.html" class="ui-btn ui-icon-arrow-r ui-btn-icon-right fixed-width" target="_self">Next page</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

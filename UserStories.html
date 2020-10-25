@@ -22,25 +22,123 @@
 			</ul>
 		</div>
 
-		<div data-role="header">
+		<div data-role="header" data-position="fixed">
             <h1>User Stories</h1>            
 			<a href="#myPanel" data-icon="bars" data-position="right" data-rel="dialog" >Menu</a>
         </div>
 
 		<div data-role="main" class="ui-content">
 			<div data-role="collapsible">
-				<h3>Collapsible content header</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non dolor quis elit suscipit commodo a eu velit. Nulla sodales velit arcu, at accumsan nisi. Donec porta tempus lorem, eget luctus diam luctus ac. Nunc et aliquam massa. Duis enim felis, varius quis pharetra quis, iaculis ac nulla. Morbi congue suscipit elit vel porta. Proin lacinia scelerisque risus, at elementum diam elementum et.</p>
+				<h3>Marta the busy mom</h3>
+					<div data-role="collapsible">
+						<h3>Who is Marta?</h3>
+						<p>
+						Marta is a 38 yeard old single mum. She works as a teacher in a primary school. She is a very busy person between work and taking care of her two children of 4 and 7 years old, driving them to 
+						school and sport activities, household chores, etc. She tend to forget about her car maintenance and documents renewal. Therefore, this easy to use web app will allow her to be reminded about any 
+						upcoming car services and renewals.
+						</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>User Story</h3>
+						<ul>
+							<li>Enters her username and password to login.</li>
+							<li>Adds a new car by entering her vehicle registration number, and current mileage (25 000 miles).</li>
+							<li>Adds from a list, car maintenance and services she wants to track </li>
+								<ul>
+									<li>For example: Oil filter replacement.</li>
+									<li>Enter date of last replacement (05.09.2020)</li>
+									<li>Enter mileage when the last replacement occurred.(22 000 miles).</li>
+									<li>Can change the default suggested mileage/date for the next maintenance.</li>
+								</ul>
+							<li>Enters expiry date for insurance (eg. 22.12.2020).</li>
+							<li>The app will set a maintenance schedule for Marta.</li>
+							<li>On 8.12.2020 Marta will receive a reminder of expiring insurance in 2 weeks.</li>
+							<li>On 22.12.2020 Marta will receive notification for insurance expiring today.</li>
+							<li>Given that she renewed the insurance.</li>
+								<ul>
+									<li>She inputs the cost.</li>
+									<li>Update the insurance expiry date.</li>
+								</ul>
+							<li>Given that the current mileage reached 31 miles.</li>
+								<ul>
+									<li>She receives notification to replace the oil filter.</li>
+								</ul>
+							<li>After she changes the oil filter, she’s prompted by the app to.</li>
+								<ul>
+									<li>input the cost of this oil replacement in expenses.</li>
+									<li>update the mileage reading for last oil replacement.</li>
+								</ul>
+							<li>At any time, she can view a list with dates of upcoming maintenance services or documents renewals sorted by dates (earliest first).</li>
+							<li>Marta receives  a weekly or monthly notification to update current mileage.</li>
+						</ul>
+					</div>
 			</div>
 			<div data-role="collapsible">
-				<h3>Collapsible content header</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non dolor quis elit suscipit commodo a eu velit. Nulla sodales velit arcu, at accumsan nisi. Donec porta tempus lorem, eget luctus diam luctus ac. Nunc et aliquam massa. Duis enim felis, varius quis pharetra quis, iaculis ac nulla. Morbi congue suscipit elit vel porta. Proin lacinia scelerisque risus, at elementum diam elementum et.</p>
+				<h3>John the taxi driver</h3>
+					<div data-role="collapsible">
+						<h3>Who is John?</h3>
+						<p>
+						John is a 32 year old taxi driver. He needs to be attentive to his car maintenance and expenses. At some points he may need to change his car as the older the car gets, the more expensive its  
+						maintenance becomes. John is interested in capturing his car expenses.
+						</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>User story</h3>
+						<ul>
+							<li>adds a new car: enters his vehicle registration number and mileage (65000 miles).</li>
+							<li>the app will collect information from DVLA’s website: </li>
+								<ul>
+									<li>The MOT expiry date, road tax due date, and year of acquisition by John.</li>
+								</ul>
+							<li>add from a list, car maintenance and services he wants to track</li>
+								<ul>
+									<li>For each type of service or repair work: he enters the date and mileage, and can change the default suggested mileage/date for the next maintenance.</li>
+								</ul>
+							<li>enters expiry date for the car insurance (eg. 12.12.2020).</li>
+							<li>opens expenses tab</li>
+								<ul>
+									<li>John select type of expense from a list (eg. fuel)</li>
+									<li>Enter the cost and validate. This can be done on a weekly basis or whenever he fills petrol into his car.</li>
+								</ul>	
+							<li>can view statistics and charts of his fuel cost per mileage and on a monthly/yearly basis.</li>
+							<li>can view charts and statistics of his expenses on a daily, monthly or yearly basis.</li>
+							<li>Given that MOT expiry date is 27.12.2020 (from DVLA’s website):</li>
+								<ul>
+									<li>On 27.11.2020 John will receive a reminder of expiring MOT in 1 month. </li>
+									<li>On 20.12.2020 John will receive a reminder of expiring MOT next week.</li>
+									<li>On 27.12.2020 John will receive a notification that his car’s MOT expired  today, and that reminds him that by law he can only drive his car to a pre-booked appointment at an MOT centre.</li>
+								</ul>
+							<li>Opens map tabs and displays nearby MOT test centres or Garages.</li>						
+						</ul>
+					</div>
+			</div>
+			<div data-role="collapsible">
+				<h3>Drake the logistic manager</h3>
+					<div data-role="collapsible">
+						<h3>Who is Drake?</h3>
+						<p>
+							Drake is a logistics manager in a small taxi company of 8 cars.  He has a system on his desktop computer to manage the cars, but he is often outside (on a commute to work, or or working from home) 
+							and would like to access information about upcoming cars maintenance and documents renewals on his phone.
+						</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>User story</h3>
+						<ul>
+							<li>He Adds a new car
+							<li>He enters its vehicle registration number and current mileage.</li>
+							<li>He repeats the two previous actions for the rest of the seven cars.</li> 
+							<li>The app will store the data and set a maintenance schedule for the all his cars.</li>
+							<li>He can view a list with dates of upcoming maintenance services or documents renewals, sorted by dates for all vehicles (the earliest date first).</li>
+							<li>He receives notification for upcoming car maintenance that are very close to today.</li>
+							<li>He receives notification for upcoming documents expiring dates (1 month, 2 weeks, 1 week, and 1 day from the expiry date).</li>
+						</ul>
+					</div>
 			</div>
 		</div>
 
 		<div data-role="footer" data-position="fixed">
+			<h1>3/6</h1>
 			<div data-role="navbar" align="center">
-				<h1>3/6</h1>
 				<div data-role="controlgroup" data-type="horizontal">
 					<a href="GoalOfTheApp.html" class="ui-btn ui-icon-arrow-l ui-btn-icon-left fixed-width" target="_self" width="5px">Previous page</a>
 					<a href="FinalAppSketches.html" class="ui-btn ui-icon-arrow-r ui-btn-icon-right fixed-width" target="_self">Next page</a>

@@ -9,6 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
+
 <body>
     <div data-role="page">
 		<div data-role="panel" id="myPanel">
@@ -38,52 +39,53 @@
 				<li>Phonegap</li>
 				<li>APIs</li>
 			</ul>
-			<div data-role="collapsible">
-				<h3>HTML</h3>
-				<p>Is a standard markup language for creating web pages, and will be used to define the content of the different screens in our app.</p>
-			</div>
-			<div data-role="collapsible">
-				<h3>CSS</h3>
-				<p>Cascading Style Sheets will be used to describe the layout of the screens in our app by specifying how the different HTML elements will be displayed in a screen.</p>
-			</div>
-			<div data-role="collapsible">
-				<h3>JavaScript</h3>
-				<p>a high-level programming language mainly used in web browsers - will be used to control the behaviour of the various App screens in terms of interacting with the user as well as retrieving data from
-				the web (MOT and Road tax information)</p>
-			</div>
-			<div data-role="collapsible">
-				<h3>JSON </h3>
-				<p>Retrieving data from the web requires using JSON which defines the format of the data to be retrieved by our App. </p>
-			</div>
-			<div data-role="collapsible">
-				<h3>jQuery Mobile</h3>
-				<p></p>
-			</div>
-			<div data-role="collapsible">
-				<h3>Phonegap (Cordoba) </h3>
-				<p></p>
-			</div>
-			<div data-role="collapsible">
-				<h3>APIs</h3>
+			<div data-role="collapsible-set">
 				<div data-role="collapsible">
-					<h3>Vehicle Enquiry Service API from DVLA</h3>
-					<p>This will be used to extract the MOT and Road tax status of a given car based on the registration number of the car. In case, this is not possible, we would fall back on manual entering of the last MOT date,
-					and send a reminder accordingly (11 months after the last MOT date). Similarly for road tax: if we are unable to use the Vehicle Enquiry Service API, then the user is prompted to enter the due date for road tax.
-					</p>
+					<h3>HTML</h3>
+					<p>Is a standard markup language for creating web pages, and will be used to define the content of the different screens in our app.</p>
 				</div>
 				<div data-role="collapsible">
-					<h3>Google Maps JavaScript API</h3>
-					<p>In particular, we are going to use the Local Context Library to show the user nearby petrol stations or car garages. </p>
+					<h3>CSS</h3>
+					<p>Cascading Style Sheets will be used to describe the layout of the screens in our app by specifying how the different HTML elements will be displayed in a screen.</p>
 				</div>
-			</div>
+				<div data-role="collapsible">
+					<h3>JavaScript</h3>
+					<p>a high-level programming language mainly used in web browsers - will be used to control the behaviour of the various App screens in terms of interacting with the user as well as retrieving data from
+					the web (MOT and Road tax information)</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>JSON </h3>
+					<p>Retrieving data from the web requires using JSON which defines the format of the data to be retrieved by our App. </p>
+				</div>
+				<div data-role="collapsible">
+					<h3>jQuery Mobile</h3>
+					<p>Is a framework we will use to build a single responsive mobile web application that is accessible on all popular smartphone, tablet, and desktop devices. JQuery Mobile provides us 
+					with a set of touch-friendly UI widget and an AJAX-powered navigation system to support animated page transitions in our application.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Phonegap (Cordoba) </h3>
+					<p>Which is based on open source Apache Cordoba, provides us with a project workflow to build, run, and package our web application for mobile devices.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>APIs</h3>
+					<div data-role="collapsible">
+						<h3>Vehicle Enquiry Service API from DVLA</h3>
+						<p>This will be used to extract the MOT and Road tax status of a given car based on the registration number of the car. In case, this is not possible, we would fall back on manual entering of the last MOT date,
+						and send a reminder accordingly (11 months after the last MOT date). Similarly for road tax: if we are unable to use the Vehicle Enquiry Service API, then the user is prompted to enter the due date for road tax.
+						</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Google Maps JavaScript API</h3>
+						<p>In particular, we are going to use the Local Context Library to show the user nearby petrol stations or car garages. </p>
+					</div>
+				</div>
+			</div>	
 		</div>
 
 		<div data-role="footer" data-position="fixed">
 			<h1>6/6</h1>
-			<div data-role="navbar" align="center">
-				<div data-role="controlgroup" data-type="horizontal">
-					<a href="SimilarApps.html" class="ui-btn ui-icon-arrow-l ui-btn-icon-left fixed-width" target="_self" width="5px">Previous page</a>
-				</div>
+			<div data-role="controlgroup" data-type="horizontal" align="center">
+				<a href="SimilarApps.html" class="ui-btn ui-icon-arrow-l ui-btn-icon-left fixed-width" target="_self">Previous page</a>
 			</div>
 		</div>
 	</div>

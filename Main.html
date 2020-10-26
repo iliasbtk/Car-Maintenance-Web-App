@@ -8,16 +8,11 @@
 	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<script>
-		$(function(){
-			// jQuery methods go here...
-		});
-	</script>
-
 </head>
+
 <body>
     <div data-role="page">
-		<div data-role="panel" id="myPanel" width="device-width">
+		<div data-role="panel" id="myPanel">
 			<a href="Main.html" target="_self" data-role="button" data-icon="home" data-iconpos="notext"></a>
 			<ul data-role="listview" data-inset="true">
 				<li><a href="GoalOfTheApp.html" target="_self">Goal of the App</a></li>
@@ -30,7 +25,7 @@
 
 		<div data-role="header" data-position="fixed">
             <h1>MyCarMaintenance</h1>            
-			<a href="#myPanel" data-icon="bars" data-position="right" data-rel="dialog" data-theme="a" >Menu</a>
+			<a href="#myPanel" data-icon="bars" data-position="right" data-rel="dialog">Menu</a>
         </div>
 
 		<div data-role="main" class="ui-content">
@@ -38,18 +33,13 @@
 			<h2> Mobile Optimized Planning Document </h2>
 			<h3> MyCarMaintenance </h3>
 			<img src="Pictures/HomePicture.png"  style="width:100%">
-			
-
 		</div>
 
 		<div data-role="footer" data-position="fixed">
 			<h1>1/6</h1>
-			<div data-role="navbar" align="center">
-				<div data-role="controlgroup" data-type="horizontal">
-					<a href="GoalOfTheApp.html" class="ui-btn ui-icon-arrow-r ui-btn-icon-left fixed-width" target="_self">Next page</a>
-				</div>
-			</div>
-			
+			<div data-role="controlgroup" data-type="horizontal" align="center">
+				<a href="GoalOfTheApp.html" class="ui-btn ui-icon-arrow-r ui-btn-icon-left fixed-width" target="_self">Next page</a>
+			</div>		
 		</div>
 	</div>
 </body>

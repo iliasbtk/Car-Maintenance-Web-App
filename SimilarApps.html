@@ -8,20 +8,8 @@
 	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<Style>
-		table, th, td {
-			border: 1px solid black;
-			border-collapse: collapse;
-		}			
-		th {
-			text-align: left;
-		}
-		table {
-			table-layout: fixed; 
-		}
-		
-	</style>
 </head>
+
 <body>
     <div data-role="page">
 		<div data-role="panel" id="myPanel">
@@ -41,137 +29,139 @@
         </div>
 
 		<div data-role="main" class="ui-content">
-			<div data-role="collapsible">
-				<h3>VehicleSmart - Car Check</h3>
-				<p>
-				VehicleSmart is an android app.It’s more useful to check a car you want to buy as it pulls information about MOT, Road Tax, whether it’s stolen, scrapped, written off. Whereas my app is more about tracking 
-				costs and automated reminders for car maintenance and document renewal. Unlike our app, VehicleSmart does not have customized statistics and charts apart from yearly mileage from MOT history. The table below 
-				highlights the key differences between our app and VehicleSmart.
-				</p>
-				<div class="ui-grid-b">    
-					<div class="ui-block-a">
-						<a href="#myPopup" data-rel="popup">
-							<img src="Pictures/VehicleSmart1.png" style="width:90%">	
-						</a>
-					</div>   
-					<div class="ui-block-b">
-						<a href="#myPopup" data-rel="popup">
-							<img src="Pictures/VehicleSmart2.png" style="width:90%">	
-						</a>
+			<div data-role="collapsible-set">
+				<div data-role="collapsible">
+					<h3>VehicleSmart - Car Check</h3>
+					<p>
+					VehicleSmart is an android app.It’s more useful to check a car you want to buy as it pulls information about MOT, Road Tax, whether it’s stolen, scrapped, written off. Whereas my app is more about tracking 
+					costs and automated reminders for car maintenance and document renewal. Unlike our app, VehicleSmart does not have customized statistics and charts apart from yearly mileage from MOT history. The table below 
+					highlights the key differences between our app and VehicleSmart.
+					</p>
+					<h4>Screenshots</h4>
+					<div class="ui-grid-b">    
+						<div class="ui-block-a">
+							<a href="#myPopup1" data-rel="popup">
+								<img src="Pictures/VehicleSmart1.png" style="width:90%">	
+							</a>
+						</div>   
+						<div class="ui-block-b">
+							<a href="#myPopup2" data-rel="popup">
+								<img src="Pictures/VehicleSmart2.png" style="width:90%">	
+							</a>
+						</div>
 					</div>
+					<h4>Features comparaison</h4>
+					<table style="width:100%">
+						<tr>
+							<th>Feature</th>
+							<th>My App</th>
+							<th>VehicleSmart</th>
+						</tr>
+							<td>Track maintenance</td>            
+							<td>Yes</td>
+							<td>Very limited</td>
+							
+						<tr>
+							<td>Track costs</td>
+							<td>Yes</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Track fuel expenses</td>
+							<td>Yes</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Map to find nearby petrol stations/MOT test centres/ repair garages</td>
+							<td>Yes</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Statics and charts of mileage and costs</td>
+							<td>Yes</td>
+							<td>Limited to using a bar chart if yearly mileage values from MOT history.</td>
+						</tr>
+					</table>
+					<div data-role="popup" id="myPopup1">
+						<a href="#" data-rel="back" class="ui-btn ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+						<img src="Pictures/VehicleSmart1.png"  style="width:100%;">
+					</div>
+					<div data-role="popup" id="myPopup2">
+						<a href="#" data-rel="back" class="ui-btn ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+						<img src="Pictures/VehicleSmart2.png"  style="width:100%;">
+					</div>			
 				</div>
 				
-				<table style="width:100%">
-					<tr>
-						<th>Feature</th>
-						<th>My App</th>
-						<th>VehicleSmart</th>
-					</tr>
-						<td>Track maintenance</td>            
-						<td>Yes</td>
-						<td>Very limited</td>
-						
-					<tr>
-						<td>Track costs</td>
-						<td>Yes</td>
-						<td>No</td>
-					</tr>
-					<tr>
-						<td>Track fuel expenses</td>
-						<td>Yes</td>
-						<td>No</td>
-					</tr>
-					<tr>
-						<td>Map to find nearby petrol stations/MOT test centres/ repair garages</td>
-						<td>Yes</td>
-						<td>No</td>
-					</tr>
-					<tr>
-						<td>Statics and charts of mileage and costs</td>
-						<td>Yes</td>
-						<td>Limited to using a bar chart if yearly mileage values from MOT history.</td>
-					</tr>
-				</table>
-				<div data-role="popup" id="myPopup">
-					<a href="#" data-rel="back" class="ui-btn ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-					<img src="Pictures/VehicleSmart1.png"  style="width:100%;">
-				</div>
-				<div data-role="popup" id="myPopup">
-					<a href="#" data-rel="back" class="ui-btn ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-					<img src="Pictures/VehicleSmart2.png"  style="width:100%;">
-				</div>			
-			</div>
-			
-			<div data-role="collapsible">
-				<h3>Fuelio</h3>
-				<p>
-				Fuelio is an android app. It’s similar to my app in terms of main goal but requires more user effort to input some data such as MOT and tax information. The same applies to maintenance services where the user
-				needs to type in the names, and fill in multiple fields. When it comes to reminders about MOT and Road tax, our app collects the data automatically from DVLA’s website and generates reminders automatically.
-				Most of the data inputs are based on a dropdown list which requires less effort from the user and enhances the usability. In our app, we avoid typing unless it is really necessary.
-				</p>
-				<div class="ui-grid-b">    
-					<div class="ui-block-a">
-						<a href="#myPopup" data-rel="popup">
-							<img src="Pictures/Fuelio1.png" style="width:90%">	
-						</a>
-					</div>   
-					<div class="ui-block-b">
-						<a href="#myPopup" data-rel="popup">
-							<img src="Pictures/Fuelio2.png" style="width:90%">	
-						</a>
+				<div data-role="collapsible">
+					<h3>Fuelio</h3>
+					<p>
+					Fuelio is an android app. It’s similar to my app in terms of main goal but requires more user effort to input some data such as MOT and tax information. The same applies to maintenance services where the user
+					needs to type in the names, and fill in multiple fields. When it comes to reminders about MOT and Road tax, our app collects the data automatically from DVLA’s website and generates reminders automatically.
+					Most of the data inputs are based on a dropdown list which requires less effort from the user and enhances the usability. In our app, we avoid typing unless it is really necessary.
+					</p>
+					<h4> Screenshots</h4>
+					<div class="ui-grid-b">    
+						<div class="ui-block-a">
+							<a href="#myPopup3" data-rel="popup">
+								<img src="Pictures/Fuelio1.png" style="width:90%">	
+							</a>
+						</div>   
+						<div class="ui-block-b">
+							<a href="#myPopup4" data-rel="popup">
+								<img src="Pictures/Fuelio2.png" style="width:90%">	
+							</a>
+						</div>
 					</div>
-				</div>
-				
-				<table style="width:100%">
-					<tr>
-						<th>Feature</th>
-						<th>My App</th>
-						<th>Fuelio</th>
-					</tr>
-						<td>Track fuel consumption	</td>            
-						<td>No(Only Cost)</td>
-						<td>Yes</td>
-						
-					<tr>
-						<td>Track document expiring dates	</td>
-						<td>Yes</td>
-						<td>Yes but requires more efforts</td>
-					</tr>
-					<tr>
-						<td>Track car maintenance</td>
-						<td>Yes</td>
-						<td>Yes but requires more efforts</td>
-					</tr>
-					<tr>
-						<td>Pull information from DVLA (automated inputs)</td>
-						<td>Yes</td>
-						<td>No</td>
-					</tr>
-					<tr>
-						<td>Ease of use</td>
-						<td>High</td>
-						<td>Low</td>
-					</tr>
-				</table>
-	
-				<div data-role="popup" id="myPopup">
-					<a href="#" data-rel="back" class="ui-btn ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-					<img src="Pictures/Fuelio1.png"  style="width:100%;">
-				</div>
-				<div data-role="popup" id="myPopup">
-					<a href="#" data-rel="back" class="ui-btn ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-					<img src="Pictures/Fuelio2.png"  style="width:100%;">
+					<h4>Features comparaison</h4>
+					<table style="width:100%">
+						<tr>
+							<th>Feature</th>
+							<th>My App</th>
+							<th>Fuelio</th>
+						</tr>
+							<td>Track fuel consumption	</td>            
+							<td>No(Only Cost)</td>
+							<td>Yes</td>
+							
+						<tr>
+							<td>Track document expiring dates	</td>
+							<td>Yes</td>
+							<td>Yes but requires more efforts</td>
+						</tr>
+						<tr>
+							<td>Track car maintenance</td>
+							<td>Yes</td>
+							<td>Yes but requires more efforts</td>
+						</tr>
+						<tr>
+							<td>Pull information from DVLA (automated inputs)</td>
+							<td>Yes</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Ease of use</td>
+							<td>High</td>
+							<td>Low</td>
+						</tr>
+					</table>
+		
+					<div data-role="popup" id="myPopup3">
+						<a href="#" data-rel="back" class="ui-btn ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+						<img src="Pictures/Fuelio1.png"  style="width:100%;">
+					</div>
+					<div data-role="popup" id="myPopup4">
+						<a href="#" data-rel="back" class="ui-btn ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+						<img src="Pictures/Fuelio2.png"  style="width:100%;">
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<div data-role="footer" data-position="fixed">
 			<h1>5/6</h1>
-			<div data-role="navbar" align="center">
-				<div data-role="controlgroup" data-type="horizontal">
-					<a href="FinalAppSketches.html" class="ui-btn ui-icon-arrow-l ui-btn-icon-left fixed-width" target="_self" width="5px">Previous page</a>
-					<a href="Technologies&Frameworks.html" class="ui-btn ui-icon-arrow-r ui-btn-icon-right fixed-width" target="_self">Next page</a>
-				</div>
+			<div data-role="controlgroup" data-type="horizontal" align="center">
+				<a href="FinalAppSketches.html" class="ui-btn ui-icon-arrow-l ui-btn-icon-left fixed-width" target="_self">Previous page</a>
+				<a href="Technologies&Frameworks.html" class="ui-btn ui-icon-arrow-r ui-btn-icon-right fixed-width" target="_self">Next page</a>
 			</div>
 		</div>
 	</div>
